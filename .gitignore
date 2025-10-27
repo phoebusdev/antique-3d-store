@@ -36,6 +36,3 @@ next-env.d.ts
 
 # Temp directories
 /3d models/
-
-# Large model files (too large for git - store separately)
-public/models/*.glb
