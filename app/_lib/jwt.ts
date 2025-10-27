@@ -2,10 +2,14 @@ import jwt from 'jsonwebtoken'
 import { DownloadTokenPayload, DownloadTokenSchema } from '@/types/jwt'
 
 // T017: JWT token generation and verification
-const JWT_SECRET = process.env.JWT_SECRET || 'dev-secret-change-in-production'
+function getJWTSecret(): string {
+  const secret = process.env.JWT_SECRET || 'dev-secret-change-in-production'
 
-if (process.env.NODE_ENV === 'production' && JWT_SECRET === 'dev-secret-change-in-production') {
-  throw new Error('JWT_SECRET must be set in production environment')
+  if (process.env.NODE_ENV === 'production' && secret === 'dev-secret-change-in-production') {
+    throw new Error('JWT_SECRET must be set in production environment')
+  }
+
+  return secret
 }
 
 export function generateDownloadToken(payload: Omit<DownloadTokenPayload, 'iat' | 'expiresAt'>): string {
@@ -22,7 +26,7 @@ export function generateDownloadToken(payload: Omit<DownloadTokenPayload, 'iat' 
   // Validate payload before signing
   DownloadTokenSchema.parse(fullPayload)
 
-  return jwt.sign(fullPayload, JWT_SECRET, {
+  return jwt.sign(fullPayload, getJWTSecret(), {
     algorithm: 'HS256',
     expiresIn: '24h',
   })
@@ -30,7 +34,7 @@ export function generateDownloadToken(payload: Omit<DownloadTokenPayload, 'iat' 
 
 export function verifyDownloadToken(token: string): DownloadTokenPayload {
   try {
-    const decoded = jwt.verify(token, JWT_SECRET, {
+    const decoded = jwt.verify(token, getJWTSecret(), {
       algorithms: ['HS256'],
     })
 
