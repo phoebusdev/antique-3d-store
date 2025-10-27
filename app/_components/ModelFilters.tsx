@@ -16,7 +16,7 @@ export interface FilterState {
 export default function ModelFilters({ onFilterChange }: ModelFiltersProps) {
   const [filters, setFilters] = useState<FilterState>({
     sortBy: 'newest',
-    priceRange: [0, 10000],
+    priceRange: [0, 100000], // Updated to $1000 max to include all models
     searchQuery: '',
   })
 
