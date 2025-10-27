@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* T020: Global styles following constitutional design */
+@layer base {
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: 'rlig' 1, 'calt' 1;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-sans font-normal tracking-tight;
+  }
+
+  h1 {
+    @apply text-4xl md:text-5xl lg:text-6xl;
+  }
+
+  h2 {
+    @apply text-3xl md:text-4xl lg:text-5xl;
+  }
+
+  h3 {
+    @apply text-2xl md:text-3xl lg:text-4xl;
+  }
+
+  code {
+    @apply font-mono text-sm;
+  }
+}
+
+@layer components {
+  /* Focus visible styles for accessibility */
+  .focus-visible {
+    @apply outline-none ring-2 ring-primary ring-offset-2 ring-offset-background;
+  }
+
+  /* Button base styles */
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-sm px-6 py-3 text-sm font-medium transition-colors;
+    @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2;
+    @apply disabled:pointer-events-none disabled:opacity-50;
+  }
+
+  .btn-primary {
+    @apply bg-primary text-background hover:bg-primary/90;
+  }
+
+  .btn-secondary {
+    @apply bg-secondary text-background hover:bg-secondary/90;
+  }
+
+  .btn-ghost {
+    @apply hover:bg-foreground/10;
+  }
+
+  /* Card styles */
+  .card {
+    @apply rounded-sm border border-foreground/10 bg-background p-6;
+  }
+
+  /* Input styles */
+  .input {
+    @apply flex h-10 w-full rounded-sm border border-foreground/20 bg-background px-3 py-2 text-sm;
+    @apply placeholder:text-foreground/50;
+    @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2;
+    @apply disabled:cursor-not-allowed disabled:opacity-50;
+  }
+}
+
+@layer utilities {
+  /* Constitutional color utilities */
+  .text-muted {
+    @apply text-foreground/70;
+  }
+
+  .text-subtle {
+    @apply text-foreground/50;
+  }
+
+  /* Container utilities */
+  .container-custom {
+    @apply mx-auto max-w-7xl px-4 sm:px-6 lg:px-8;
+  }
+}
