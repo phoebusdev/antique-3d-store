@@ -136,7 +136,7 @@ export default function RoadmapPage() {
             <div className="card bg-primary/5 border-primary/20">
               <h3 className="text-lg font-semibold mb-3 text-primary">The Transformation to Real Models</h3>
               <p className="text-sm text-muted mb-3">
-                Replace AI-generated placeholders with actual high-resolution scans of UNESCO heritage sites.
+                Replace AI-generated placeholders with actual high-resolution scans of UNESCO World Heritage sites globally.
               </p>
             </div>
 
@@ -461,20 +461,35 @@ export default function RoadmapPage() {
             </div>
 
             <div className="card">
-              <h3 className="text-lg font-semibold mb-3">Strategic Location</h3>
+              <h3 className="text-lg font-semibold mb-3">Strategic Location: Albania</h3>
               <div className="space-y-3 text-sm">
                 <div>
-                  <div className="font-semibold text-foreground mb-1">Primary Targets</div>
+                  <div className="font-semibold text-foreground mb-1">Albanian Quarry Regions</div>
                   <ul className="space-y-1 text-muted ml-4">
-                    <li>• <strong>Indiana Limestone Belt:</strong> Bloomington, IN (highest quality architectural limestone)</li>
-                    <li>• <strong>Texas Hill Country:</strong> Austin area (abundant limestone, lower cost)</li>
-                    <li>• <strong>Georgia Marble:</strong> Tate, GA (marble for premium elements)</li>
+                    <li>• <strong>Kruja-Burrel Belt:</strong> High-quality limestone (20+ active quarries)</li>
+                    <li>• <strong>Elbasan Region:</strong> White limestone, extensive deposits</li>
+                    <li>• <strong>Pogradec (Lake Ohrid):</strong> Premium marble, historical quarries</li>
+                    <li>• <strong>Përmet-Këlcyrë:</strong> Decorative marble, multiple color variations</li>
+                    <li>• <strong>Kuçova-Berat:</strong> Abundant limestone for architectural elements</li>
+                  </ul>
+                </div>
+                <div>
+                  <div className="font-semibold text-foreground mb-1">Albanian Production Advantages</div>
+                  <ul className="space-y-1 text-muted ml-4">
+                    <li>• Low labor costs compared to Western Europe/US</li>
+                    <li>• Abundant limestone and marble deposits</li>
+                    <li>• EU candidate status (trade access improving)</li>
+                    <li>• Port access via Durrës (Mediterranean shipping to EU/global markets)</li>
+                    <li>• Growing stone export industry infrastructure</li>
+                    <li>• Strategic location between Europe and Middle East markets</li>
                   </ul>
                 </div>
                 <div>
                   <div className="font-semibold text-foreground mb-1">Economics</div>
                   <ul className="space-y-1 text-muted ml-4">
-                    <li>• Material cost: $200-400/ton vs $800-1,200/block retail</li>
+                    <li>• Material cost: €150-300/ton (extremely low vs €600-1,000 Western Europe)</li>
+                    <li>• Labor: €400-700/month (skilled CNC operator)</li>
+                    <li>• Facility costs: €3-6/sq ft annually (Tirana periphery, industrial zones)</li>
                     <li>• Zero transportation from quarry to fabrication</li>
                     <li>• Direct quarry relationships for quality selection</li>
                     <li>• Access to material rejected by dimension stone market (perfect for ornament)</li>
@@ -496,35 +511,39 @@ export default function RoadmapPage() {
             </div>
 
             <div className="card bg-primary/5 border-primary/20">
-              <h3 className="text-lg font-semibold mb-3 text-primary">Long-Term Economics</h3>
+              <h3 className="text-lg font-semibold mb-3 text-primary">Long-Term Economics (Albania-Based)</h3>
               <div className="text-sm space-y-3">
                 <p className="text-muted">
-                  At scale, with quarry integration and capital amortized, production cost approaches material cost alone.
+                  At scale, with Albanian quarry integration and capital amortized, production costs become exceptionally competitive.
                 </p>
                 <div className="space-y-2">
                   <div className="flex justify-between">
-                    <span className="text-muted">Material (quarry direct):</span>
-                    <span className="font-mono">$250-350</span>
+                    <span className="text-muted">Material (Albanian quarry direct):</span>
+                    <span className="font-mono">€170-220 ($180-240)</span>
                   </div>
                   <div className="flex justify-between">
                     <span className="text-muted">Machine time (amortized):</span>
                     <span className="font-mono">$50/hour × 100h = $5,000</span>
                   </div>
                   <div className="flex justify-between">
-                    <span className="text-muted">Labor (setup/finishing):</span>
-                    <span className="font-mono">$200-300</span>
+                    <span className="text-muted">Labor (Albanian rates, setup/finishing):</span>
+                    <span className="font-mono">$100-150</span>
                   </div>
                   <div className="flex justify-between border-t border-primary/20 pt-2">
                     <span className="text-foreground font-semibold">Total cost per piece:</span>
-                    <span className="font-mono font-semibold">$5,450-5,650</span>
+                    <span className="font-mono font-semibold">$5,280-5,390</span>
                   </div>
                   <div className="flex justify-between font-bold text-primary">
                     <span>Margin at $12,000 sale:</span>
-                    <span className="font-mono">$6,350-6,550 (53-55%)</span>
+                    <span className="font-mono">$6,610-6,720 (55-56%)</span>
+                  </div>
+                  <div className="flex justify-between font-bold text-primary">
+                    <span>Or competitive EU pricing at $8,000:</span>
+                    <span className="font-mono">$2,610-2,720 (33-34%)</span>
                   </div>
                 </div>
                 <p className="text-muted italic pt-3 border-t border-primary/20">
-                  This is the endgame: transforming $250 of abundant natural stone into $12,000 architectural elements through automation.
+                  Albanian production facility provides: dramatically lower material costs (€150-300/ton vs €600-1,000 Western Europe), significantly lower labor costs (€400-700/month vs €3,000-4,000 Western Europe), and Mediterranean port access via Durrës for efficient shipping to European and global markets.
                 </p>
               </div>
             </div>
