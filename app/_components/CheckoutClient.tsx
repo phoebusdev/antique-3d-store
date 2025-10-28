@@ -6,6 +6,8 @@ import { loadStripe } from '@stripe/stripe-js'
 import { Elements } from '@stripe/react-stripe-js'
 import { AntiqueModel } from '@/types/models'
 import CheckoutForm from '@/app/_components/CheckoutForm'
+import FulfillmentSelector from '@/app/_components/FulfillmentSelector'
+import { FulfillmentOption } from '@/types/fulfillment'
 
 // T052: Initialize Stripe with public key
 const stripePromise = loadStripe(
@@ -22,12 +24,15 @@ export default function CheckoutClient({ model }: CheckoutClientProps) {
   const [isLoading, setIsLoading] = useState(true)
   const [error, setError] = useState<string>('')
   const [customerEmail, setCustomerEmail] = useState<string>('')
+  const [fulfillmentOption, setFulfillmentOption] = useState<FulfillmentOption>('digital')
+  const [selectedPartnerId, setSelectedPartnerId] = useState<string | undefined>()
+  const [finalPrice, setFinalPrice] = useState<number>(model.price)
 
   const formattedPrice = new Intl.NumberFormat('en-US', {
     style: 'currency',
     currency: 'USD',
     minimumFractionDigits: 0,
-  }).format(model.price / 100)
+  }).format(finalPrice / 100)
 
   // T053: Create Payment Intent on mount
   useEffect(() => {
@@ -87,6 +92,18 @@ export default function CheckoutClient({ model }: CheckoutClientProps) {
     )
   }
 
+  const handleFulfillmentChange = (
+    option: FulfillmentOption,
+    partnerId?: string,
+    price?: number
+  ) => {
+    setFulfillmentOption(option)
+    setSelectedPartnerId(partnerId)
+    if (price !== undefined) {
+      setFinalPrice(price)
+    }
+  }
+
   return (
     <div className="container-custom py-12">
       <div className="max-w-2xl mx-auto">
@@ -108,7 +125,11 @@ export default function CheckoutClient({ model }: CheckoutClientProps) {
               <div>
                 <p className="font-semibold">{model.name}</p>
                 <p className="text-sm text-muted">{model.era}</p>
-                <p className="text-xs text-subtle mt-1">Digital Download (GLB format)</p>
+                <p className="text-xs text-subtle mt-1">
+                  {fulfillmentOption === 'digital'
+                    ? 'Digital Download (GLB format)'
+                    : `CNC Fabrication + Delivery${selectedPartnerId ? ' via ' + selectedPartnerId.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ') : ''}`}
+                </p>
               </div>
               <p className="text-xl font-semibold text-primary">{formattedPrice}</p>
             </div>
@@ -125,6 +146,12 @@ export default function CheckoutClient({ model }: CheckoutClientProps) {
               <span className="text-primary">{formattedPrice}</span>
             </div>
           </div>
+
+          {/* Fulfillment options */}
+          <FulfillmentSelector
+            basePrice={model.price}
+            onSelectionChange={handleFulfillmentChange}
+          />
 
           {/* Stripe payment form */}
           <div className="card">

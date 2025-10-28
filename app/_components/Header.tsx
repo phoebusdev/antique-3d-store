@@ -18,6 +18,12 @@ export default function Header() {
                 Gallery
               </Link>
               <Link
+                href="/about"
+                className="text-sm text-muted hover:text-foreground transition-colors"
+              >
+                About
+              </Link>
+              <Link
                 href="/admin"
                 className="text-sm text-muted hover:text-foreground transition-colors"
               >
