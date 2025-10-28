@@ -20,62 +20,50 @@ export default function AboutPage() {
               Understanding the Automation Insight
             </h2>
 
-            <div className="space-y-6 text-base text-muted">
-              <p className="text-lg text-foreground">
-                This use case is emblematic of downstream consequences of automation that most fail to recognize. Three compounding factors create radical market discontinuity:
-              </p>
-
-              <div className="space-y-6">
-                <div>
-                  <h3 className="text-lg font-semibold mb-2 text-foreground">
-                    1. Automation Eliminates Labor Cost → Economic Fundamentals Invert
-                  </h3>
-                  <p>
-                    For 150 years, stone ornament was economically unviable. Not because stone became expensive—it remained cheap—but because skilled labor became expensive. Industrial materials (concrete, steel, synthetics) won not on material merit but on labor efficiency: high processing cost, low assembly labor.
-                  </p>
-                  <p className="mt-2">
-                    CNC automation eliminates 90%+ of labor cost. This doesn't make stone "competitive again"—it makes stone <em>cheaper than the alternatives</em>. The economic calculation that drove 150 years of material choice reverses. What was economically impossible becomes economically optimal.
-                  </p>
-                </div>
-
-                <div>
-                  <h3 className="text-lg font-semibold mb-2 text-foreground">
-                    2. AI Eliminates Design Cost → Masterpieces at Zero Marginal Cost
-                  </h3>
-                  <p>
-                    Chartres Cathedral capitals. Versailles ornamental friezes. Renaissance palazzo details. These were commissioned by kings and popes—representing peak human artistry refined over centuries. The design labor was infinite (guilds, apprenticeships, generational knowledge transfer).
-                  </p>
-                  <p className="mt-2">
-                    3D scanning + AI makes this available at zero marginal cost. Not "inspired by" or "in the style of"—the actual masterpieces, dimensionally accurate to 0.1mm, ready for CNC fabrication. The best design work ever produced is now free. This is not incremental improvement—it's the elimination of an entire cost category that previously determined what was buildable.
-                  </p>
-                </div>
-
-                <div>
-                  <h3 className="text-lg font-semibold mb-2 text-foreground">
-                    3. Legacy Companies Cannot Adapt → New Entrant Advantage
-                  </h3>
-                  <p>
-                    Existing building material companies cannot exploit this. They have established supply chains, inventory systems, sales processes, and pricing models built around industrial materials. Transitioning to stone ornament requires:
-                  </p>
-                  <ul className="list-disc list-inside space-y-1 ml-4 mt-2">
-                    <li>Rebuilding procurement (quarries instead of factories)</li>
-                    <li>Retraining sales (architectural specification vs. commodity pricing)</li>
-                    <li>Restructuring inventory (custom fabrication vs. stock items)</li>
-                    <li>Rethinking margins (material cost vs. processing margin)</li>
-                  </ul>
-                  <p className="mt-2">
-                    This is not a feature request or process improvement. It requires business model transformation that destroys existing value chains. Companies with stone infrastructure (like those building structural stone buildings: 15 Clerkenwell Close, Perraudin's projects) prove the concept but cannot scale without abandoning their current business.
-                  </p>
-                  <p className="mt-2">
-                    New entrants start with the correct constraints: zero labor cost (CNC), zero design cost (public domain scanning), material-only pricing. This is why automation creates second-order market opportunities that incumbents cannot address—even when they see it coming.
-                  </p>
-                </div>
+            <div className="space-y-5 text-base text-muted">
+              <div>
+                <h3 className="text-lg font-semibold mb-2 text-foreground">
+                  Mechanism: Labor Cost Elimination → Economic Inversion
+                </h3>
+                <p>
+                  Stone remained materially cheap for 150 years. Labor became expensive. Industrial materials (concrete, steel) won on labor efficiency—high processing cost, minimal assembly labor. CNC eliminates 90%+ of labor cost. Stone becomes cheaper than alternatives. The economic calculation reverses.
+                </p>
               </div>
 
-              <div className="mt-6 p-4 bg-background/50 border-l-4 border-primary">
-                <p className="font-semibold text-foreground mb-2">The Pattern:</p>
+              <div>
+                <h3 className="text-lg font-semibold mb-2 text-foreground">
+                  Proof: Structural Stone Buildings
+                </h3>
+                <p>
+                  <strong>15 Clerkenwell Close</strong> (London, Amin Taha): Six-story load-bearing limestone exoskeleton. <strong>Wine Museum</strong> (Corsica, Gilles Perraudin): Structural stone with minimal reinforcement. <strong>Multiple projects</strong> by Carl Fredrik Svenstedt, Webb Yates Engineers. If structural applications are viable, ornamental applications are trivial.
+                </p>
+              </div>
+
+              <div>
+                <h3 className="text-lg font-semibold mb-2 text-foreground">
+                  AI Factor: Design Cost Elimination
+                </h3>
+                <p>
+                  Chartres Cathedral capitals. Versailles friezes. Renaissance palazzo details. Commissioned by royals, refined over centuries. 3D scanning makes these available at zero marginal cost—dimensionally accurate to 0.1mm, CNC-ready. Not "inspired by"—the actual masterpieces. Best artistry ever produced, now free.
+                </p>
+              </div>
+
+              <div>
+                <h3 className="text-lg font-semibold mb-2 text-foreground">
+                  Incumbent Constraint: Value Chain Destruction
+                </h3>
+                <p>
+                  Building material companies have supply chains, inventory, sales, and pricing built around industrial materials. Exploiting this requires: quarry procurement (not factories), specification sales (not commodity), custom fabrication (not stock), material-only margins (not processing markup).
+                </p>
+                <p className="mt-2">
+                  Stone infrastructure exists (15 Clerkenwell, Perraudin prove it) but cannot scale without abandoning existing business. Not a feature request—requires business model replacement. New entrants start with correct constraints: zero labor (CNC), zero design (scanning), material-only pricing.
+                </p>
+              </div>
+
+              <div className="mt-4 p-4 bg-background/50 border-l-4 border-primary">
+                <p className="font-semibold text-foreground mb-1">Pattern:</p>
                 <p className="text-sm">
-                  When automation eliminates a major cost category, it doesn't just make existing products cheaper—it makes previously uneconomical products optimal. When AI eliminates design cost, it doesn't just make new designs cheaper—it makes historical masterpieces free. When these combine, market structure inverts in ways that require complete business model reconstruction. Incumbents cannot adapt because adaptation means abandoning their entire value chain. New entrants win by building around the new reality from inception.
+                  Automation eliminating major cost categories makes previously uneconomical products optimal. AI eliminating design cost makes historical masterpieces free. Combined, market structure inverts requiring complete business model reconstruction. Incumbents fail because adaptation destroys value chains. New entrants exploit second-order consequences from inception.
                 </p>
               </div>
             </div>

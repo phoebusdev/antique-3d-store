@@ -29,15 +29,15 @@ export default function Hero() {
           {/* Automation insight */}
           <div className="card bg-primary/5 border-primary/20 mb-10">
             <div className="text-sm text-primary font-semibold mb-3">Why This Matters</div>
-            <div className="space-y-3 text-sm text-muted">
+            <div className="space-y-2 text-sm text-muted">
               <p>
-                <strong className="text-foreground">Automation eliminates labor cost,</strong> fundamentally changing what's economically viable. Stone ornament becomes cheaper than the industrial alternatives (concrete, synthetic materials) it replaced.
+                <strong className="text-foreground">Automation eliminates labor cost.</strong> Stone ornament becomes cheaper than the industrial materials that replaced it.
               </p>
               <p>
-                <strong className="text-foreground">AI eliminates design cost.</strong> Masterpieces commissioned by royals—the best artistry ever produced—are available at zero marginal cost through 3D scanning. No new design labor required.
+                <strong className="text-foreground">AI eliminates design cost.</strong> Royal masterpieces (Chartres, Versailles) available at zero marginal cost via 3D scanning.
               </p>
               <p>
-                <strong className="text-foreground">Legacy companies cannot adapt.</strong> This requires rebuilding around radically different market constraints. New entrants exploit second-order automation consequences that existing workflows cannot accommodate.
+                <strong className="text-foreground">Incumbents cannot adapt.</strong> Requires rebuilding around constraints that destroy existing value chains. New entrants exploit second-order consequences legacy companies cannot accommodate.
               </p>
             </div>
           </div>
