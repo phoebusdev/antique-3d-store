@@ -2,8 +2,8 @@ import type { Metadata } from 'next'
 import DifferentialScrollSection from '@/app/_components/DifferentialScrollSection'
 
 export const metadata: Metadata = {
-  title: 'About | Architectural Stone Ornament',
-  description: 'Understanding the economic and technical shift that makes CNC stone carving viable for architectural ornament',
+  title: 'About CarveNC | Economic & Technical Analysis',
+  description: 'Economic and technical analysis of CNC automation for architectural stone ornament production',
 }
 
 export default function AboutPage() {
@@ -11,7 +11,7 @@ export default function AboutPage() {
     <div className="container-custom py-16">
       <div className="max-w-4xl mx-auto">
         <h1 className="text-4xl font-bold mb-12">
-          Architectural Stone Ornament: Economic & Technical Analysis
+          <span className="font-display">Carve</span><span className="font-modern font-light tracking-wider">NC</span>: Economic & Technical Analysis
         </h1>
 
         {/* Overview */}

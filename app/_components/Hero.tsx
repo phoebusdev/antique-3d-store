@@ -8,7 +8,7 @@ export default function Hero() {
         <div className="max-w-4xl mx-auto">
           {/* Headline */}
           <h1 className="text-3xl md:text-5xl font-bold mb-8 leading-tight">
-            Architectural Stone Elements: Automation Economics
+            <span className="font-display">Carve</span><span className="font-modern font-light tracking-wider">NC</span>: Architectural Stone Elements
           </h1>
 
           {/* Subhead */}

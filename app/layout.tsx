@@ -33,11 +33,11 @@ const spaceGrotesk = Space_Grotesk({
 
 export const metadata: Metadata = {
   title: 'CarveNC | Architectural Stone Elements via CNC',
-  description: 'Post-labor economics for architectural stone. CNC automation eliminates labor costs, making UNESCO-quality ornament economically viable at any scale.',
+  description: 'Automation economics for architectural stone. CNC technology reduces labor costs, making UNESCO-quality ornament economically viable at any scale.',
   keywords: ['CNC stone carving', 'architectural stone', 'automation economics', 'CNC fabrication', 'photogrammetry'],
   openGraph: {
     title: 'CarveNC',
-    description: 'Architectural Stone Elements: Post-Labor Economics',
+    description: 'Architectural Stone Elements: Automation Economics',
     type: 'website',
   },
 }
