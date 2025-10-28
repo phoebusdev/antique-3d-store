@@ -67,27 +67,27 @@ export default function DifferentialScrollSection({
   }, [isMobile])
 
   return (
-    <section ref={sectionRef} className="mb-24">
+    <section ref={sectionRef} className="mb-24 relative">
       {/* Sticky Section Title - spans full width above columns */}
-      <div className="sticky top-0 z-10 bg-background/95 backdrop-blur-sm py-6 mb-12 border-b border-foreground/10">
+      <div className="sticky top-0 z-20 bg-background py-6 mb-12 border-b border-foreground/10">
         <h2 className={`text-3xl font-bold ${titleClassName}`}>
           {title}
         </h2>
       </div>
 
       {/* Two Column Layout - completely separate */}
-      <div className="grid grid-cols-1 md:grid-cols-[280px_1fr] gap-12 md:gap-20">
+      <div className="grid grid-cols-1 md:grid-cols-[280px_1fr] gap-12 md:gap-20 relative">
         {/* Left Column - Subheadings (slow scroll) */}
         <div
           ref={leftColumnRef}
-          className="space-y-16 md:text-right"
+          className="space-y-16 md:text-right relative z-0"
           style={{ willChange: isMobile ? 'auto' : 'transform' }}
         >
           {leftContent}
         </div>
 
         {/* Right Column - Content (normal scroll) */}
-        <div className="space-y-16">
+        <div className="space-y-16 relative z-0">
           {rightContent}
         </div>
       </div>
