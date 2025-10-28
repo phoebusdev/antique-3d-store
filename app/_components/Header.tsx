@@ -7,8 +7,9 @@ export default function Header() {
       <div className="container-custom">
         <div className="flex h-16 items-center justify-between">
           <div className="flex items-center gap-8">
-            <Link href="/" className="text-xl font-display font-semibold tracking-tight hover:text-primary transition-colors">
-              Antique 3D
+            <Link href="/" className="text-xl font-semibold tracking-tight hover:text-primary transition-colors group">
+              <span className="font-display">Carve</span>
+              <span className="font-modern font-light tracking-wider">NC</span>
             </Link>
             <nav className="hidden md:flex items-center gap-6">
               <Link

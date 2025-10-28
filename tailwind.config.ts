@@ -20,6 +20,7 @@ const config: Config = {
         display: ['var(--font-display)', 'serif'],
         body: ['var(--font-body)', 'sans-serif'],
         mono: ['var(--font-mono)', 'monospace'],
+        modern: ['var(--font-modern)', 'sans-serif'],
       },
     },
   },

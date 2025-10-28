@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { Inter, JetBrains_Mono, EB_Garamond } from 'next/font/google'
+import { Inter, JetBrains_Mono, EB_Garamond, Space_Grotesk } from 'next/font/google'
 import './globals.css'
 import Header from '@/app/_components/Header'
 import Footer from '@/app/_components/Footer'
@@ -24,13 +24,20 @@ const jetbrainsMono = JetBrains_Mono({
   display: 'swap',
 })
 
+const spaceGrotesk = Space_Grotesk({
+  subsets: ['latin'],
+  weight: ['300', '400', '500', '600', '700'],
+  variable: '--font-modern',
+  display: 'swap',
+})
+
 export const metadata: Metadata = {
-  title: 'Antique 3D Store | Historical Furniture Models',
-  description: 'Museum-quality 3D models of historical antique furniture. Digital downloads and CNC-ready files for authentic reproductions.',
-  keywords: ['3D models', 'antique furniture', 'historical reproductions', 'CNC fabrication', 'digital downloads'],
+  title: 'CarveNC | Architectural Stone Elements via CNC',
+  description: 'Post-labor economics for architectural stone. CNC automation eliminates labor costs, making UNESCO-quality ornament economically viable at any scale.',
+  keywords: ['CNC stone carving', 'architectural stone', 'automation economics', 'CNC fabrication', 'photogrammetry'],
   openGraph: {
-    title: 'Antique 3D Store',
-    description: 'Museum-quality 3D models of historical antique furniture',
+    title: 'CarveNC',
+    description: 'Architectural Stone Elements: Post-Labor Economics',
     type: 'website',
   },
 }
@@ -41,7 +48,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={`${ebGaramond.variable} ${inter.variable} ${jetbrainsMono.variable}`}>
+    <html lang="en" className={`${ebGaramond.variable} ${inter.variable} ${jetbrainsMono.variable} ${spaceGrotesk.variable}`}>
       <body className="min-h-screen flex flex-col">
         <Header />
         <main className="flex-1">{children}</main>

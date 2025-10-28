@@ -9,7 +9,7 @@ export default function Footer() {
           <div>
             <h3 className="text-sm font-semibold mb-3">About</h3>
             <p className="text-sm text-muted">
-              Museum-quality 3D models of historical antique furniture for digital download and CNC fabrication.
+              Post-labor economics for architectural stone. CNC automation eliminates labor costs, making UNESCO-quality ornament economically viable at any scale.
             </p>
           </div>
           <div>
@@ -55,7 +55,7 @@ export default function Footer() {
         </div>
         <div className="mt-8 pt-8 border-t border-foreground/10">
           <p className="text-sm text-muted text-center">
-            © {currentYear} Antique 3D Store. All rights reserved.
+            © {currentYear} <span className="font-display">Carve</span><span className="font-modern">NC</span>. All rights reserved.
           </p>
         </div>
       </div>
