@@ -67,7 +67,7 @@ export default function DifferentialScrollSection({
   }, [isMobile])
 
   return (
-    <section ref={sectionRef} className="mb-24 relative">
+    <section ref={sectionRef} className="mb-40 relative">
       {/* Sticky Section Title - spans full width above columns */}
       <div className="sticky top-0 z-20 bg-background py-6 mb-12 border-b border-foreground/10">
         <h2 className={`text-3xl font-bold ${titleClassName}`}>
