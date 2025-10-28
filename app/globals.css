@@ -2,10 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-/* T020: Global styles following constitutional design */
+/* T020: Global styles with semantic typography system */
 @layer base {
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-body;
     font-feature-settings: 'rlig' 1, 'calt' 1;
     font-synthesis: none;
     text-rendering: optimizeLegibility;
@@ -14,7 +14,15 @@
   }
 
   h1, h2, h3, h4, h5, h6 {
-    @apply font-sans font-normal tracking-tight;
+    @apply font-display font-normal tracking-tight;
+  }
+
+  button, .btn {
+    @apply font-display;
+  }
+
+  label {
+    @apply font-display;
   }
 
   h1 {
@@ -42,7 +50,7 @@
 
   /* Button base styles */
   .btn {
-    @apply inline-flex items-center justify-center gap-2 rounded-sm px-6 py-3 text-sm font-medium transition-colors;
+    @apply inline-flex items-center justify-center gap-2 rounded-sm px-6 py-3 text-sm font-display font-medium transition-colors;
     @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2;
     @apply disabled:pointer-events-none disabled:opacity-50;
   }
