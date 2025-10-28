@@ -18,53 +18,69 @@ export default function AboutPage() {
         <DifferentialScrollSection
           title="Understanding the Automation Insight"
           titleClassName="text-primary"
-          className="card bg-primary/5 border-primary/20"
           leftContent={
             <>
-              <h3 className="text-lg font-semibold text-foreground">
-                Mechanism: Labor Cost Elimination → Economic Inversion
-              </h3>
-              <h3 className="text-lg font-semibold text-foreground">
-                Proof: Structural Stone Buildings
-              </h3>
-              <h3 className="text-lg font-semibold text-foreground">
-                AI Factor: Design Cost Elimination
-              </h3>
-              <h3 className="text-lg font-semibold text-foreground">
-                Incumbent Constraint: Value Chain Destruction
-              </h3>
+              <div>
+                <h3 className="text-lg font-semibold text-primary">
+                  Mechanism
+                </h3>
+                <p className="text-sm text-subtle mt-1">Labor Cost Elimination → Economic Inversion</p>
+              </div>
+              <div>
+                <h3 className="text-lg font-semibold text-primary">
+                  Proof
+                </h3>
+                <p className="text-sm text-subtle mt-1">Structural Stone Buildings</p>
+              </div>
+              <div>
+                <h3 className="text-lg font-semibold text-primary">
+                  AI Factor
+                </h3>
+                <p className="text-sm text-subtle mt-1">Design Cost Elimination</p>
+              </div>
+              <div>
+                <h3 className="text-lg font-semibold text-primary">
+                  Incumbent Constraint
+                </h3>
+                <p className="text-sm text-subtle mt-1">Value Chain Destruction</p>
+              </div>
             </>
           }
           rightContent={
-            <div className="space-y-6 text-base text-muted">
-              <p>
-                Stone remained materially cheap for 150 years. Labor became expensive. Industrial materials (concrete, steel) won on labor efficiency—high processing cost, minimal assembly labor. CNC eliminates 90%+ of labor cost. Stone becomes cheaper than alternatives. The economic calculation reverses.
-              </p>
+            <>
+              <div className="text-base text-muted">
+                <p>
+                  Stone remained materially cheap for 150 years. Labor became expensive. Industrial materials (concrete, steel) won on labor efficiency—high processing cost, minimal assembly labor. CNC eliminates 90%+ of labor cost. Stone becomes cheaper than alternatives. The economic calculation reverses.
+                </p>
+              </div>
 
-              <p>
-                <strong>15 Clerkenwell Close</strong> (London, Amin Taha): Six-story load-bearing limestone exoskeleton. <strong>Wine Museum</strong> (Corsica, Gilles Perraudin): Structural stone with minimal reinforcement. <strong>Multiple projects</strong> by Carl Fredrik Svenstedt, Webb Yates Engineers. If structural applications are viable, ornamental applications are trivial.
-              </p>
+              <div className="text-base text-muted">
+                <p>
+                  <strong>15 Clerkenwell Close</strong> (London, Amin Taha): Six-story load-bearing limestone exoskeleton. <strong>Wine Museum</strong> (Corsica, Gilles Perraudin): Structural stone with minimal reinforcement. <strong>Multiple projects</strong> by Carl Fredrik Svenstedt, Webb Yates Engineers. If structural applications are viable, ornamental applications are trivial.
+                </p>
+              </div>
 
-              <p>
-                Chartres Cathedral capitals. Versailles friezes. Renaissance palazzo details. Commissioned by royals, refined over centuries. 3D scanning makes these available at zero marginal cost—dimensionally accurate to 0.1mm, CNC-ready. Not "inspired by"—the actual masterpieces. Best artistry ever produced, now free.
-              </p>
+              <div className="text-base text-muted">
+                <p>
+                  Chartres Cathedral capitals. Versailles friezes. Renaissance palazzo details. Commissioned by royals, refined over centuries. 3D scanning makes these available at zero marginal cost—dimensionally accurate to 0.1mm, CNC-ready. Not "inspired by"—the actual masterpieces. Best artistry ever produced, now free.
+                </p>
+              </div>
 
-              <div className="space-y-2">
+              <div className="text-base text-muted space-y-3">
                 <p>
                   Building material companies have supply chains, inventory, sales, and pricing built around industrial materials. Exploiting this requires: quarry procurement (not factories), specification sales (not commodity), custom fabrication (not stock), material-only margins (not processing markup).
                 </p>
                 <p>
                   Stone infrastructure exists (15 Clerkenwell, Perraudin prove it) but cannot scale without abandoning existing business. Not a feature request—requires business model replacement. New entrants start with correct constraints: zero labor (CNC), zero design (scanning), material-only pricing.
                 </p>
+                <div className="mt-6 p-4 bg-primary/5 border-l-4 border-primary">
+                  <p className="font-semibold text-foreground mb-2">Pattern:</p>
+                  <p className="text-sm">
+                    Automation eliminating major cost categories makes previously uneconomical products optimal. AI eliminating design cost makes historical masterpieces free. Combined, market structure inverts requiring complete business model reconstruction. Incumbents fail because adaptation destroys value chains. New entrants exploit second-order consequences from inception.
+                  </p>
+                </div>
               </div>
-
-              <div className="mt-4 p-4 bg-background/50 border-l-4 border-primary">
-                <p className="font-semibold text-foreground mb-1">Pattern:</p>
-                <p className="text-sm">
-                  Automation eliminating major cost categories makes previously uneconomical products optimal. AI eliminating design cost makes historical masterpieces free. Combined, market structure inverts requiring complete business model reconstruction. Incumbents fail because adaptation destroys value chains. New entrants exploit second-order consequences from inception.
-                </p>
-              </div>
-            </div>
+            </>
           }
         />
 
@@ -213,64 +229,70 @@ export default function AboutPage() {
             </>
           }
           rightContent={
-            <div className="space-y-6">
-              <ul className="list-disc list-inside space-y-2 text-muted ml-4">
-                <li>High-resolution 3D scanning of historical elements</li>
-                <li>Photogrammetry or laser scanning</li>
-                <li>UNESCO sites, cathedrals, historical buildings</li>
-                <li>Dimensional accuracy to 0.1mm</li>
-              </ul>
+            <>
+              <div>
+                <ul className="list-disc list-inside space-y-2 text-muted ml-4">
+                  <li>High-resolution 3D scanning of historical elements</li>
+                  <li>Photogrammetry or laser scanning</li>
+                  <li>UNESCO sites, cathedrals, historical buildings</li>
+                  <li>Dimensional accuracy to 0.1mm</li>
+                </ul>
+              </div>
 
-              <ul className="list-disc list-inside space-y-2 text-muted ml-4">
-                <li>Mesh cleanup and optimization</li>
-                <li>CAD conversion (STEP files)</li>
-                <li>Toolpath generation for CNC (G-code)</li>
-                <li>Multiple variants (3-axis, 5-axis)</li>
-              </ul>
+              <div>
+                <ul className="list-disc list-inside space-y-2 text-muted ml-4">
+                  <li>Mesh cleanup and optimization</li>
+                  <li>CAD conversion (STEP files)</li>
+                  <li>Toolpath generation for CNC (G-code)</li>
+                  <li>Multiple variants (3-axis, 5-axis)</li>
+                </ul>
+              </div>
 
-              <ul className="list-disc list-inside space-y-2 text-muted ml-4">
-                <li>Material sourcing (limestone, sandstone, marble - all cheap and abundant)</li>
-                <li>CNC milling (40-200 hours depending on complexity)</li>
-                <li>Diamond-tipped tooling</li>
-                <li>Optional hand finishing</li>
-              </ul>
+              <div>
+                <ul className="list-disc list-inside space-y-2 text-muted ml-4">
+                  <li>Material sourcing (limestone, sandstone, marble - all cheap and abundant)</li>
+                  <li>CNC milling (40-200 hours depending on complexity)</li>
+                  <li>Diamond-tipped tooling</li>
+                  <li>Optional hand finishing</li>
+                </ul>
 
-              <div className="card bg-primary/5 border-primary/30 mt-8">
-                <h3 className="text-lg font-semibold mb-3">Economics Example: Chartres Cathedral Jamb Figure</h3>
-                <div className="grid md:grid-cols-2 gap-6">
-                  <div>
-                    <div className="text-sm text-subtle mb-2">CNC Method</div>
-                    <div className="space-y-2 font-mono text-sm">
-                      <div className="flex justify-between">
-                        <span>Material (limestone block):</span>
-                        <span>$800</span>
-                      </div>
-                      <div className="flex justify-between">
-                        <span>CNC time (120h @ $50/hr):</span>
-                        <span>$6,000</span>
-                      </div>
-                      <div className="flex justify-between font-bold text-primary pt-2 border-t border-foreground/10">
-                        <span>Total:</span>
-                        <span>$6,800</span>
+                <div className="card bg-primary/5 border-primary/30 mt-8">
+                  <h3 className="text-lg font-semibold mb-3">Economics Example: Chartres Cathedral Jamb Figure</h3>
+                  <div className="grid md:grid-cols-2 gap-6">
+                    <div>
+                      <div className="text-sm text-subtle mb-2">CNC Method</div>
+                      <div className="space-y-2 font-mono text-sm">
+                        <div className="flex justify-between">
+                          <span>Material (limestone block):</span>
+                          <span>$800</span>
+                        </div>
+                        <div className="flex justify-between">
+                          <span>CNC time (120h @ $50/hr):</span>
+                          <span>$6,000</span>
+                        </div>
+                        <div className="flex justify-between font-bold text-primary pt-2 border-t border-foreground/10">
+                          <span>Total:</span>
+                          <span>$6,800</span>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <div>
-                    <div className="text-sm text-subtle mb-2">Manual Carving</div>
-                    <div className="space-y-2 font-mono text-sm">
-                      <div className="flex justify-between">
-                        <span>Labor (800h @ $100/hr):</span>
-                        <span className="text-red-400">$80,000</span>
-                      </div>
-                      <div className="flex justify-between font-bold text-red-400 pt-2 border-t border-foreground/10">
-                        <span>Savings:</span>
-                        <span>90%+</span>
+                    <div>
+                      <div className="text-sm text-subtle mb-2">Manual Carving</div>
+                      <div className="space-y-2 font-mono text-sm">
+                        <div className="flex justify-between">
+                          <span>Labor (800h @ $100/hr):</span>
+                          <span className="text-red-400">$80,000</span>
+                        </div>
+                        <div className="flex justify-between font-bold text-red-400 pt-2 border-t border-foreground/10">
+                          <span>Savings:</span>
+                          <span>90%+</span>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
+            </>
           }
         />
 
@@ -352,34 +374,38 @@ export default function AboutPage() {
             </>
           }
           rightContent={
-            <div className="space-y-8">
-              <ul className="list-disc list-inside space-y-2 text-muted ml-4">
-                <li>New construction incorporating historical ornament</li>
-                <li>Restoration projects (matching existing elements)</li>
-                <li>Custom residential architecture</li>
-                <li>Commercial buildings seeking aesthetic differentiation</li>
-                <li>Anyone building with stone who can access CNC</li>
-              </ul>
-
-              <ul className="list-disc list-inside space-y-2 text-muted ml-4">
-                <li>Cathedral-quality ornament at material cost</li>
-                <li>Historically accurate reproduction</li>
-                <li>Custom sizing/adaptation (CAD files are editable)</li>
-                <li>Mix-and-match elements from different periods/regions</li>
-              </ul>
-
-              <div className="card bg-primary/5 border-primary/30 mt-8">
-                <h3 className="font-semibold mb-3">Economic Reality</h3>
-                <p className="text-sm text-muted mb-3">
-                  A carved stone capital that would have cost $80,000 in manual labor can now be
-                  produced for $6,800 in CNC time + material. The design work was completed centuries
-                  ago. The material is abundant and cheap. The only cost is machine time.
-                </p>
-                <p className="text-sm text-muted">
-                  This fundamentally changes what is economically possible in architectural ornament.
-                </p>
+            <>
+              <div>
+                <ul className="list-disc list-inside space-y-2 text-muted ml-4">
+                  <li>New construction incorporating historical ornament</li>
+                  <li>Restoration projects (matching existing elements)</li>
+                  <li>Custom residential architecture</li>
+                  <li>Commercial buildings seeking aesthetic differentiation</li>
+                  <li>Anyone building with stone who can access CNC</li>
+                </ul>
               </div>
-            </div>
+
+              <div>
+                <ul className="list-disc list-inside space-y-2 text-muted ml-4">
+                  <li>Cathedral-quality ornament at material cost</li>
+                  <li>Historically accurate reproduction</li>
+                  <li>Custom sizing/adaptation (CAD files are editable)</li>
+                  <li>Mix-and-match elements from different periods/regions</li>
+                </ul>
+
+                <div className="card bg-primary/5 border-primary/30 mt-8">
+                  <h3 className="font-semibold mb-3">Economic Reality</h3>
+                  <p className="text-sm text-muted mb-3">
+                    A carved stone capital that would have cost $80,000 in manual labor can now be
+                    produced for $6,800 in CNC time + material. The design work was completed centuries
+                    ago. The material is abundant and cheap. The only cost is machine time.
+                  </p>
+                  <p className="text-sm text-muted">
+                    This fundamentally changes what is economically possible in architectural ornament.
+                  </p>
+                </div>
+              </div>
+            </>
           }
         />
 

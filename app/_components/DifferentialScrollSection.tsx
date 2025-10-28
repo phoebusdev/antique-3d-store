@@ -7,7 +7,6 @@ interface DifferentialScrollSectionProps {
   titleClassName?: string
   leftContent: React.ReactNode
   rightContent: React.ReactNode
-  className?: string
 }
 
 export default function DifferentialScrollSection({
@@ -15,7 +14,6 @@ export default function DifferentialScrollSection({
   titleClassName = '',
   leftContent,
   rightContent,
-  className = '',
 }: DifferentialScrollSectionProps) {
   const leftColumnRef = useRef<HTMLDivElement>(null)
   const sectionRef = useRef<HTMLDivElement>(null)
@@ -51,12 +49,11 @@ export default function DifferentialScrollSection({
         // Only apply effect when section is in viewport
         if (sectionTop < viewportHeight && rect.bottom > 0) {
           // Calculate how much we've scrolled through this section
-          // Negative sectionTop means we've scrolled past the top
           const scrolled = Math.max(0, -sectionTop)
 
-          // Apply parallax: left column moves slower (0.6x speed)
-          // So it needs to move 0.4 (1 - 0.6) in opposite direction
-          const parallaxOffset = scrolled * 0.4
+          // Apply DRAMATIC parallax: left column moves much slower (0.3x speed)
+          // So it needs to move 0.7 (1 - 0.3) in opposite direction
+          const parallaxOffset = scrolled * 0.7
 
           leftColumn.style.transform = `translateY(${parallaxOffset}px)`
         }
@@ -70,27 +67,27 @@ export default function DifferentialScrollSection({
   }, [isMobile])
 
   return (
-    <section ref={sectionRef} className={`mb-16 ${className}`}>
-      {/* Sticky Section Title */}
-      <div className="sticky top-0 z-10 bg-background/95 backdrop-blur-sm py-4 mb-6 border-b border-foreground/10">
-        <h2 className={`text-2xl font-bold ${titleClassName}`}>
+    <section ref={sectionRef} className="mb-24">
+      {/* Sticky Section Title - spans full width above columns */}
+      <div className="sticky top-0 z-10 bg-background/95 backdrop-blur-sm py-6 mb-12 border-b border-foreground/10">
+        <h2 className={`text-3xl font-bold ${titleClassName}`}>
           {title}
         </h2>
       </div>
 
-      {/* Two Column Layout */}
-      <div className="grid grid-cols-1 md:grid-cols-[320px_1fr] gap-8 md:gap-12">
-        {/* Left Column - Headings (slower scroll) */}
+      {/* Two Column Layout - completely separate */}
+      <div className="grid grid-cols-1 md:grid-cols-[280px_1fr] gap-12 md:gap-20">
+        {/* Left Column - Subheadings (slow scroll) */}
         <div
           ref={leftColumnRef}
-          className="space-y-6"
+          className="space-y-16 md:text-right"
           style={{ willChange: isMobile ? 'auto' : 'transform' }}
         >
           {leftContent}
         </div>
 
         {/* Right Column - Content (normal scroll) */}
-        <div className="space-y-6">
+        <div className="space-y-16">
           {rightContent}
         </div>
       </div>
