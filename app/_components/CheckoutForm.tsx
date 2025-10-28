@@ -109,7 +109,7 @@ export default function CheckoutForm({ modelId, onEmailChange }: CheckoutFormPro
         disabled={!stripe || isProcessing}
         className="btn btn-primary w-full"
       >
-        {isProcessing ? 'Processing...' : 'Complete Purchase'}
+        {isProcessing ? 'Processing...' : 'Complete Order'}
       </button>
 
       {/* Test card info for development */}

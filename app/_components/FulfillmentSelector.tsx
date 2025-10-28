@@ -56,6 +56,10 @@ export default function FulfillmentSelector({
     <div className="card">
       <h2 className="text-xl mb-6">Fulfillment Options</h2>
 
+      <div className="text-sm text-muted mb-6 p-3 bg-primary/5 border border-primary/20 rounded">
+        <strong className="text-foreground">For project-scale orders (50+ pieces):</strong> Contact directly for volume pricing and production scheduling.
+      </div>
+
       <div className="space-y-4">
         {/* Option A: Digital Files Only */}
         <label
@@ -75,13 +79,16 @@ export default function FulfillmentSelector({
               className="mt-1"
             />
             <div className="flex-1">
-              <div className="font-semibold mb-1">Digital Files Only (default)</div>
+              <div className="font-semibold mb-1">Option A: Digital Files Only</div>
               <div className="text-sm text-muted space-y-1">
-                <p>Download files immediately after purchase</p>
+                <p>For architects/developers with existing CNC relationships</p>
                 <p className="font-mono text-xs">
-                  Includes: STL, OBJ, G-code (3-axis & 5-axis), STEP, PDF drawings
+                  Full toolpath library: 3-axis, 4-axis, 5-axis G-code
                 </p>
-                <p className="text-subtle">You handle fabrication yourself</p>
+                <p className="font-mono text-xs">
+                  CAD-editable: STEP format, scale/adapt as needed
+                </p>
+                <p className="text-subtle">Acquire toolpaths immediately after order</p>
               </div>
               <div className="mt-2 text-lg font-semibold text-primary">
                 {formatPrice(basePrice)}
@@ -108,9 +115,9 @@ export default function FulfillmentSelector({
               className="mt-1"
             />
             <div className="flex-1">
-              <div className="font-semibold mb-1">Fabrication + Delivery</div>
+              <div className="font-semibold mb-1">Option B: CNC Partner Network</div>
               <div className="text-sm text-muted mb-3">
-                Select a CNC stone carving partner below
+                Full-service fabrication partners: material sourcing, CNC fabrication, delivery
               </div>
 
               {/* Partner selection - only shown when fabrication is selected */}

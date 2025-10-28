@@ -84,7 +84,7 @@ export default function ModelDetailClient({ model }: ModelDetailClientProps) {
               disabled={isLoading}
               className="btn btn-primary w-full"
             >
-              {isLoading ? 'Processing...' : 'Purchase & Download'}
+              {isLoading ? 'Processing...' : 'Order Element'}
             </button>
             <p className="text-xs text-muted mt-4 text-center">
               Secure checkout powered by Stripe

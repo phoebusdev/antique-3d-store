@@ -12,10 +12,10 @@ export default function HomePage() {
 
       <div id="gallery" className="container-custom py-12">
         <div className="mb-12">
-          <h2 className="text-2xl font-bold mb-4">Digital Catalog</h2>
+          <h2 className="text-2xl font-bold mb-4">Catalog of Elements</h2>
           <p className="text-lg text-muted max-w-3xl">
-            High-resolution scans of architectural stone ornament from UNESCO heritage sites.
-            Each element is CNC-ready with multiple file formats (STL, OBJ, G-code, STEP).
+            High-resolution scans of architectural stone elements from UNESCO heritage sites.
+            Each piece is CNC-ready, CAD-editable, and scalable. Suitable for building projects at any scale—from custom residential work to commercial developments and civic infrastructure. Volume pricing available for 10+ pieces.
           </p>
         </div>
 

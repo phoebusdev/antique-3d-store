@@ -51,9 +51,9 @@ function SuccessPageContent() {
           <div className="w-20 h-20 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-6">
             <span className="text-4xl">✓</span>
           </div>
-          <h1 className="mb-4">Purchase Successful!</h1>
+          <h1 className="mb-4">Order Confirmed!</h1>
           <p className="text-lg text-muted">
-            Thank you for your purchase. Your download is ready.
+            Thank you for your order. Your digital files are ready to acquire.
           </p>
         </div>
 
@@ -62,7 +62,7 @@ function SuccessPageContent() {
           <h2 className="text-xl mb-4">Order Details</h2>
           <div className="space-y-3 pb-4 border-b border-foreground/10">
             <div className="flex justify-between">
-              <span className="text-muted">Model</span>
+              <span className="text-muted">Element</span>
               <span className="font-medium">{model.name}</span>
             </div>
             <div className="flex justify-between">
@@ -104,7 +104,7 @@ function SuccessPageContent() {
                 2
               </span>
               <div>
-                <p className="font-medium mb-1">Download your model</p>
+                <p className="font-medium mb-1">Download your files</p>
                 <p className="text-sm text-muted">
                   Click the download link in the email. You have 10 downloads available.
                 </p>
@@ -115,7 +115,7 @@ function SuccessPageContent() {
                 3
               </span>
               <div>
-                <p className="font-medium mb-1">Use your 3D model</p>
+                <p className="font-medium mb-1">Use your element files</p>
                 <p className="text-sm text-muted">
                   Import the GLB file into your 3D software, game engine, or send to CNC fabrication.
                 </p>
@@ -142,10 +142,10 @@ function SuccessPageContent() {
         {/* Actions */}
         <div className="flex flex-col sm:flex-row gap-4">
           <Link href="/" className="btn btn-primary flex-1">
-            Browse More Models
+            Browse More Elements
           </Link>
           <Link href={`/model/${model.id}`} className="btn btn-ghost flex-1">
-            View Model Details
+            View Element Details
           </Link>
         </div>
 

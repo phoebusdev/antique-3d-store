@@ -39,7 +39,7 @@ export default function ModelCard({ model }: ModelCardProps) {
           {/* T027: Price display */}
           <div className="flex items-center justify-between pt-3 border-t border-foreground/10">
             <span className="text-2xl font-semibold text-primary">{formattedPrice}</span>
-            <span className="text-sm text-subtle">Digital Download</span>
+            <span className="text-sm text-subtle">Digital Files</span>
           </div>
 
           {/* T028: Model metadata */}
