@@ -14,75 +14,22 @@ export default function AboutPage() {
           Architectural Stone Ornament: Economic & Technical Analysis
         </h1>
 
-        {/* Section 0: Understanding the Automation Insight */}
-        <DifferentialScrollSection
-          title="Understanding the Automation Insight"
-          titleClassName="text-primary"
-          leftContent={
-            <>
-              <div>
-                <h3 className="text-lg font-semibold text-primary">
-                  Mechanism
-                </h3>
-                <p className="text-sm text-subtle mt-1">Labor Cost Elimination → Economic Inversion</p>
-              </div>
-              <div>
-                <h3 className="text-lg font-semibold text-primary">
-                  Proof
-                </h3>
-                <p className="text-sm text-subtle mt-1">Structural Stone Buildings</p>
-              </div>
-              <div>
-                <h3 className="text-lg font-semibold text-primary">
-                  AI Factor
-                </h3>
-                <p className="text-sm text-subtle mt-1">Design Cost Elimination</p>
-              </div>
-              <div>
-                <h3 className="text-lg font-semibold text-primary">
-                  Incumbent Constraint
-                </h3>
-                <p className="text-sm text-subtle mt-1">Value Chain Destruction</p>
-              </div>
-            </>
-          }
-          rightContent={
-            <>
-              <div className="text-base text-muted">
-                <p>
-                  For 150 years, stone remained materially abundant while labor costs rose. Industrial materials (concrete, steel) gained market dominance through labor efficiency—despite higher processing costs, they required minimal assembly labor. CNC automation eliminates over 90% of labor costs in stone fabrication. This fundamentally alters the economic comparison, making stone competitive with modern alternatives.
-                </p>
-              </div>
+        {/* Overview */}
+        <div className="mb-16">
+          <div className="space-y-6 text-base text-muted">
+            <p>
+              For 150 years, stone remained materially abundant while labor costs rose. Industrial materials (concrete, steel) gained market dominance through labor efficiency—despite higher processing costs, they required minimal assembly labor. CNC automation eliminates over 90% of labor costs in stone fabrication, fundamentally altering the economic comparison.
+            </p>
 
-              <div className="text-base text-muted">
-                <p>
-                  <strong>15 Clerkenwell Close</strong> (London, Amin Taha): Six-story load-bearing limestone exoskeleton. <strong>Wine Museum</strong> (Corsica, Gilles Perraudin): Structural stone with minimal reinforcement. <strong>Multiple projects</strong> by Carl Fredrik Svenstedt and Webb Yates Engineers demonstrate this shift. When structural applications prove viable, ornamental applications become straightforward by comparison.
-                </p>
-              </div>
+            <p>
+              <strong>15 Clerkenwell Close</strong> (London, Amin Taha): Six-story load-bearing limestone exoskeleton. <strong>Wine Museum</strong> (Corsica, Gilles Perraudin): Structural stone with minimal reinforcement. <strong>Multiple projects</strong> by Carl Fredrik Svenstedt and Webb Yates Engineers demonstrate this shift. When structural applications prove viable, ornamental applications become straightforward by comparison.
+            </p>
 
-              <div className="text-base text-muted">
-                <p>
-                  Chartres Cathedral capitals. Versailles friezes. Renaissance palazzo details. Elements commissioned by royalty and refined over centuries. Through 3D scanning, these designs become accessible at minimal marginal cost—dimensionally accurate to 0.1mm, CNC-ready. Not interpretations, but precise reproductions of historical masterworks. Centuries of design excellence, now digitally preserved and reproducible.
-                </p>
-              </div>
-
-              <div className="text-base text-muted space-y-3">
-                <p>
-                  Traditional building material companies have established supply chains, inventory systems, and pricing structures optimized for industrial materials. Pursuing this opportunity requires different operational choices: direct quarry relationships over factory processing, specification-based sales over commodity pricing, custom fabrication over standardized inventory, and material-focused margins over processing markups.
-                </p>
-                <p>
-                  The technical infrastructure exists—projects like 15 Clerkenwell and Perraudin's work demonstrate feasibility—but scaling within existing business models presents challenges. This represents not an incremental improvement but a fundamental business model transformation. New entrants can build from first principles: CNC-based fabrication, digitally-sourced designs, and material-centric economics.
-                </p>
-                <div className="mt-6 p-4 bg-primary/5 border-l-4 border-primary">
-                  <p className="font-semibold text-foreground mb-2">The Pattern:</p>
-                  <p className="text-sm">
-                    When automation eliminates major cost categories, previously uneconomical products can become optimal solutions. When AI reduces design costs, historical masterpieces become accessible. Together, these shifts invert market structures and require fundamental business model reconstruction. Established companies face the challenge of adapting while protecting existing value chains. New entrants can leverage these second-order consequences from the outset.
-                  </p>
-                </div>
-              </div>
-            </>
-          }
-        />
+            <p>
+              Through 3D scanning, historical designs become accessible at minimal marginal cost—dimensionally accurate to 0.1mm, CNC-ready. Chartres Cathedral capitals. Versailles friezes. Renaissance palazzo details. Not interpretations, but precise reproductions of masterworks commissioned by royalty and refined over centuries.
+            </p>
+          </div>
+        </div>
 
         {/* Section 1: Economic Fundamentals */}
         <section className="mb-16">
@@ -438,82 +385,9 @@ export default function AboutPage() {
           </div>
         </section>
 
-        {/* Section 5: Why This Matters (Portfolio Context) */}
-        <section className="mb-16">
-          <h2 className="text-2xl font-bold mb-6 border-b border-foreground/10 pb-2">
-            5. Why This Matters (Portfolio Context)
-          </h2>
-
-          <div className="space-y-6">
-            <div className="card bg-primary/5 border-primary/20">
-              <h3 className="font-semibold mb-3 text-primary">What This Demonstrates</h3>
-              <p className="text-sm text-muted mb-4">
-                This project shows understanding that automation doesn't just make things cheaper — it changes which materials and methods become economically optimal.
-              </p>
-              <div className="space-y-3 text-sm">
-                <div>
-                  <div className="font-semibold text-foreground">Industrial era:</div>
-                  <div className="text-muted">Labor expensive → minimize labor (steel/concrete, simple forms)</div>
-                </div>
-                <div>
-                  <div className="font-semibold text-foreground">Automation era:</div>
-                  <div className="text-muted">Labor eliminated → material optimization (stone, complex forms)</div>
-                </div>
-              </div>
-            </div>
-
-            <div className="card bg-background/50">
-              <h3 className="font-semibold mb-3">The Pattern</h3>
-              <ul className="list-disc list-inside space-y-2 text-sm text-muted ml-4">
-                <li>Free/cheap resource (stone, rock, raw material)</li>
-                <li>Historically constrained by labor cost</li>
-                <li>Automation eliminates constraint</li>
-                <li>Resource becomes viable for complex applications</li>
-                <li><strong className="text-foreground">Entire industries can be restructured around this shift</strong></li>
-              </ul>
-            </div>
-
-            <div className="card bg-background/50">
-              <h3 className="font-semibold mb-3">Other Applications of This Pattern</h3>
-              <ul className="list-disc list-inside space-y-2 text-sm text-muted ml-4">
-                <li><strong className="text-foreground">Agriculture:</strong> Labor → robots, marginal land becomes viable</li>
-                <li><strong className="text-foreground">Manufacturing:</strong> Complex geometries previously too labor-intensive</li>
-                <li><strong className="text-foreground">Construction:</strong> On-site fabrication, custom everything</li>
-                <li>Any industry where material is cheap but labor is dominant cost</li>
-              </ul>
-            </div>
-
-            <div className="card bg-primary/5 border-primary/30">
-              <h3 className="font-semibold mb-3">The Capability Being Demonstrated</h3>
-              <p className="text-sm text-muted italic">
-                "Understanding second-order consequences. Beyond 'CNC accelerates carving'—that's first-order thinking. Second-order analysis reveals: 'Labor elimination makes stone architecturally optimal again, enabling ornamental styles that have been economically unfeasible for 150 years.' This represents the analytical depth automation opportunities require."
-              </p>
-            </div>
-
-            <div className="mt-6 p-4 bg-background/50 rounded border border-foreground/10">
-              <h3 className="font-semibold mb-2 text-sm">Design Library: Historical Resources</h3>
-              <p className="text-xs text-muted mb-3">
-                The design work is already done. Centuries of architectural refinement available in the public domain.
-              </p>
-              <div className="grid md:grid-cols-2 gap-4 text-xs text-muted">
-                <ul className="list-disc list-inside space-y-1 ml-4">
-                  <li>Chartres, Notre-Dame, Amiens cathedrals</li>
-                  <li>Renaissance palazzos</li>
-                  <li>Baroque churches</li>
-                </ul>
-                <ul className="list-disc list-inside space-y-1 ml-4">
-                  <li>Gothic civic buildings</li>
-                  <li>UNESCO heritage sites documented</li>
-                  <li>Public domain (most work &gt;100 years old)</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Section 6: Application */}
+        {/* Section 5: Application */}
         <DifferentialScrollSection
-          title="6. Application"
+          title="5. Application"
           leftContent={
             <>
               <h3 className="text-lg font-semibold text-primary">Who This Is For</h3>

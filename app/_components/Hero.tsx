@@ -22,24 +22,8 @@ export default function Hero() {
               Stone resources are abundant and accessible. Historically, ornamental stonework was constrained by labor costs. CNC automation fundamentally changes this equation.
             </p>
             <p>
-              The result: Cathedral-quality architectural ornament becomes economically viable for contemporary projects. This demonstrates how automation reshapes fundamental cost structures in traditional industries.
+              The result: Cathedral-quality architectural ornament becomes economically viable for contemporary projects. Labor elimination makes stone architecturally optimal again, enabling ornamental styles that have been economically unfeasible for 150 years.
             </p>
-          </div>
-
-          {/* Automation insight */}
-          <div className="card bg-primary/5 border-primary/20 mb-10">
-            <div className="text-sm text-primary font-semibold mb-3">Why This Matters</div>
-            <div className="space-y-2 text-sm text-muted">
-              <p>
-                <strong className="text-foreground">Understanding second-order effects.</strong> Beyond "CNC accelerates carving" lies a deeper insight: labor elimination makes stone architecturally optimal again, enabling ornamental styles that have been economically unfeasible for 150 years.
-              </p>
-              <p>
-                <strong className="text-foreground">Recognizing structural opportunities.</strong> When abundant materials meet eliminated labor costs, economic fundamentals shift. Entire industries can be restructured around such transformations.
-              </p>
-              <p>
-                <strong className="text-foreground">Technical execution capability.</strong> Photogrammetry → CAD → CNC pipeline. From heritage site documentation to fabricated element. Strategic approach: addressing architectural challenges through economic innovation rather than aesthetic advocacy.
-              </p>
-            </div>
           </div>
 
           {/* Cost comparison */}
