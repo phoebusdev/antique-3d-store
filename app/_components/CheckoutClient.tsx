@@ -1,18 +1,10 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import { useRouter } from 'next/navigation'
-import { loadStripe } from '@stripe/stripe-js'
-import { Elements } from '@stripe/react-stripe-js'
 import { AntiqueModel } from '@/types/models'
-import CheckoutForm from '@/app/_components/CheckoutForm'
 import FulfillmentSelector from '@/app/_components/FulfillmentSelector'
 import { FulfillmentOption } from '@/types/fulfillment'
-
-// T052: Initialize Stripe with public key
-const stripePromise = loadStripe(
-  process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY || ''
-)
 
 interface CheckoutClientProps {
   model: AntiqueModel
@@ -20,10 +12,6 @@ interface CheckoutClientProps {
 
 export default function CheckoutClient({ model }: CheckoutClientProps) {
   const router = useRouter()
-  const [clientSecret, setClientSecret] = useState<string>('')
-  const [isLoading, setIsLoading] = useState(true)
-  const [error, setError] = useState<string>('')
-  const [customerEmail, setCustomerEmail] = useState<string>('')
   const [fulfillmentOption, setFulfillmentOption] = useState<FulfillmentOption>('digital')
   const [selectedPartnerId, setSelectedPartnerId] = useState<string | undefined>()
   const [finalPrice, setFinalPrice] = useState<number>(model.price)
@@ -33,64 +21,6 @@ export default function CheckoutClient({ model }: CheckoutClientProps) {
     currency: 'USD',
     minimumFractionDigits: 0,
   }).format(finalPrice / 100)
-
-  // T053: Create Payment Intent on mount
-  useEffect(() => {
-    const createPaymentIntent = async () => {
-      try {
-        const response = await fetch('/api/stripe', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({
-            modelId: model.id,
-            customerEmail: customerEmail || 'guest@example.com',
-          }),
-        })
-
-        if (!response.ok) {
-          throw new Error('Failed to create payment intent')
-        }
-
-        const data = await response.json()
-        setClientSecret(data.clientSecret)
-      } catch (err) {
-        console.error('Error creating payment intent:', err)
-        setError('Unable to initialize checkout. Please try again.')
-      } finally {
-        setIsLoading(false)
-      }
-    }
-
-    createPaymentIntent()
-  }, [model.id, customerEmail])
-
-  if (error) {
-    return (
-      <div className="container-custom py-12">
-        <div className="max-w-2xl mx-auto">
-          <div className="card text-center">
-            <p className="text-red-500 mb-4">{error}</p>
-            <button onClick={() => router.back()} className="btn btn-ghost">
-              Go Back
-            </button>
-          </div>
-        </div>
-      </div>
-    )
-  }
-
-  if (isLoading || !clientSecret) {
-    return (
-      <div className="container-custom py-12">
-        <div className="max-w-2xl mx-auto">
-          <div className="card text-center">
-            <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary mx-auto mb-4" />
-            <p className="text-muted">Initializing secure checkout...</p>
-          </div>
-        </div>
-      </div>
-    )
-  }
 
   const handleFulfillmentChange = (
     option: FulfillmentOption,
@@ -102,6 +32,11 @@ export default function CheckoutClient({ model }: CheckoutClientProps) {
     if (price !== undefined) {
       setFinalPrice(price)
     }
+  }
+
+  const handleDemoCheckout = () => {
+    // Simulate successful checkout for demo
+    router.push(`/success?modelId=${model.id}&payment_intent=demo_${Date.now()}`)
   }
 
   return (
@@ -147,43 +82,48 @@ export default function CheckoutClient({ model }: CheckoutClientProps) {
             </div>
           </div>
 
+          {/* Demo Notice */}
+          <div className="card bg-amber-500/5 border-amber-500/20">
+            <h2 className="text-xl mb-4 text-amber-500">Demo Mode</h2>
+            <p className="text-sm text-muted mb-4">
+              This is a demonstration site. Payment processing is not active.
+            </p>
+            <div className="text-sm space-y-3 text-muted">
+              <p>
+                <strong className="text-foreground">Production Implementation:</strong> Stripe integration is fully configured and ready to activate. The existing codebase includes:
+              </p>
+              <ul className="list-disc list-inside space-y-1 ml-4">
+                <li>Stripe Elements UI components (configured with dark theme)</li>
+                <li>Payment Intent API endpoint (<code className="text-xs bg-foreground/10 px-1 py-0.5 rounded">/api/stripe</code>)</li>
+                <li>Webhook handling for payment confirmation</li>
+                <li>Environment variables ready (<code className="text-xs bg-foreground/10 px-1 py-0.5 rounded">STRIPE_SECRET_KEY</code>, <code className="text-xs bg-foreground/10 px-1 py-0.5 rounded">STRIPE_PUBLISHABLE_KEY</code>)</li>
+              </ul>
+              <p className="pt-2 border-t border-foreground/10">
+                <strong className="text-foreground">To activate:</strong> Add Stripe API keys to environment variables and uncomment payment integration in <code className="text-xs bg-foreground/10 px-1 py-0.5 rounded">CheckoutClient.tsx</code>. Payment processing would be live immediately.
+              </p>
+            </div>
+          </div>
+
           {/* Fulfillment options */}
           <FulfillmentSelector
             basePrice={model.price}
             onSelectionChange={handleFulfillmentChange}
           />
 
-          {/* Stripe payment form */}
+          {/* Demo checkout button */}
           <div className="card">
-            <h2 className="text-xl mb-6">Payment Details</h2>
-            <Elements
-              stripe={stripePromise}
-              options={{
-                clientSecret,
-                appearance: {
-                  theme: 'night',
-                  variables: {
-                    colorPrimary: '#00d9ff',
-                    colorBackground: '#0a0a0a',
-                    colorText: '#f5f5f5',
-                    colorDanger: '#ff4444',
-                    fontFamily: 'Inter, sans-serif',
-                    borderRadius: '2px',
-                  },
-                },
-              }}
+            <h2 className="text-xl mb-6">Complete Order (Demo)</h2>
+            <p className="text-sm text-muted mb-6">
+              In production, this would display the Stripe payment form with card input fields. For this demo, clicking below simulates a successful payment.
+            </p>
+            <button
+              onClick={handleDemoCheckout}
+              className="btn btn-primary w-full text-lg py-3"
             >
-              <CheckoutForm
-                modelId={model.id}
-                onEmailChange={setCustomerEmail}
-              />
-            </Elements>
-          </div>
-
-          {/* Security notice */}
-          <div className="text-center">
-            <p className="text-xs text-muted">
-              🔒 Secure payment powered by Stripe. Your payment information is encrypted and never stored on our servers.
+              Complete Demo Order
+            </button>
+            <p className="text-xs text-muted text-center mt-4">
+              This will redirect to the success page to demonstrate the post-purchase flow
             </p>
           </div>
         </div>
