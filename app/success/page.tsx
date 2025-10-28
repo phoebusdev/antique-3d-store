@@ -51,9 +51,9 @@ function SuccessPageContent() {
           <div className="w-20 h-20 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-6">
             <span className="text-4xl">✓</span>
           </div>
-          <h1 className="mb-4">Order Confirmed!</h1>
+          <h1 className="mb-4">Order Confirmed</h1>
           <p className="text-lg text-muted">
-            Thank you for your order. Your digital files are ready to acquire.
+            Thank you for your purchase. Your digital files are ready for download.
           </p>
         </div>
 
@@ -115,9 +115,9 @@ function SuccessPageContent() {
                 3
               </span>
               <div>
-                <p className="font-medium mb-1">Use your element files</p>
+                <p className="font-medium mb-1">Use your files</p>
                 <p className="text-sm text-muted">
-                  Import the GLB file into your 3D software, game engine, or send to CNC fabrication.
+                  Import the GLB file into your 3D software, visualization tool, or send to CNC fabrication.
                 </p>
               </div>
             </li>
@@ -126,9 +126,9 @@ function SuccessPageContent() {
 
         {/* Support information */}
         <div className="card mb-8">
-          <h2 className="text-xl mb-4">Need Help?</h2>
+          <h2 className="text-xl mb-4">Need Assistance?</h2>
           <p className="text-sm text-muted mb-4">
-            If you don't receive the email within 10 minutes, please check your spam folder or contact our support team.
+            If you don't receive the email within 10 minutes, please check your spam folder or contact support.
           </p>
           <div className="flex gap-4">
             <a href="mailto:support@antique3d.com" className="text-sm text-primary hover:underline">

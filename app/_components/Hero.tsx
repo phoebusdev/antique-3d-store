@@ -8,21 +8,21 @@ export default function Hero() {
         <div className="max-w-4xl mx-auto">
           {/* Headline */}
           <h1 className="text-3xl md:text-5xl font-bold mb-8 leading-tight">
-            Architectural Stone Elements: Post-Labor Economics
+            Architectural Stone Elements: Automation Economics
           </h1>
 
           {/* Subhead */}
           <p className="text-xl md:text-2xl text-muted mb-8 leading-relaxed">
-            Once CNC machines are paid off, converting worthless rock into UNESCO-quality architectural elements costs material only. Supply for building projects at any scale. Cure glass-cube architecture with economics.
+            CNC automation transforms abundant natural stone into precision architectural elements at material cost. Bringing UNESCO-quality ornament to building projects at any scale through the economics of automation.
           </p>
 
           {/* Body content */}
           <div className="space-y-4 text-base text-muted mb-10">
             <p>
-              Stone is materially infinite and free. Historical limitation was labor cost. CNC automation eliminates labor.
+              Stone resources are abundant and accessible. Historically, ornamental stonework was constrained by labor costs. CNC automation fundamentally changes this equation.
             </p>
             <p>
-              Result: Cathedral-quality ornament becomes economically viable for any project. This is a demonstration of understanding how automation changes fundamental cost structures, using architectural stone as illustration.
+              The result: Cathedral-quality architectural ornament becomes economically viable for contemporary projects. This demonstrates how automation reshapes fundamental cost structures in traditional industries.
             </p>
           </div>
 
@@ -31,13 +31,13 @@ export default function Hero() {
             <div className="text-sm text-primary font-semibold mb-3">Why This Matters</div>
             <div className="space-y-2 text-sm text-muted">
               <p>
-                <strong className="text-foreground">Recognizing second-order consequences.</strong> Not "CNC makes carving faster" — that's first-order. Second-order: "Labor elimination makes stone optimal again, enabling architectural styles economically impossible for 150 years."
+                <strong className="text-foreground">Understanding second-order effects.</strong> Beyond "CNC accelerates carving" lies a deeper insight: labor elimination makes stone architecturally optimal again, enabling ornamental styles that have been economically unfeasible for 150 years.
               </p>
               <p>
-                <strong className="text-foreground">Identifying arbitrage opportunities.</strong> Free material (stone, rock) + eliminated labor cost = economic inversion. Industries can be restructured around this shift.
+                <strong className="text-foreground">Recognizing structural opportunities.</strong> When abundant materials meet eliminated labor costs, economic fundamentals shift. Entire industries can be restructured around such transformations.
               </p>
               <p>
-                <strong className="text-foreground">Technical implementation capability.</strong> Photogrammetry → CAD → CNC pipeline. From UNESCO site to fabricated element. Strategic vision: cure architectural degradation via economics, not aesthetics.
+                <strong className="text-foreground">Technical execution capability.</strong> Photogrammetry → CAD → CNC pipeline. From heritage site documentation to fabricated element. Strategic approach: addressing architectural challenges through economic innovation rather than aesthetic advocacy.
               </p>
             </div>
           </div>
@@ -73,7 +73,7 @@ export default function Hero() {
                 </div>
               </div>
               <div className="mt-4 pt-4 border-t border-foreground/10 text-xs text-primary">
-                90%+ labor cost elimination
+                90%+ reduction in labor costs
               </div>
             </div>
           </div>

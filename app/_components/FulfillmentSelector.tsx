@@ -57,7 +57,7 @@ export default function FulfillmentSelector({
       <h2 className="text-xl mb-6">Fulfillment Options</h2>
 
       <div className="text-sm text-muted mb-6 p-3 bg-primary/5 border border-primary/20 rounded">
-        <strong className="text-foreground">For project-scale orders (50+ pieces):</strong> Contact directly for volume pricing and production scheduling.
+        <strong className="text-foreground">For project-scale orders (50+ pieces):</strong> Please contact us directly for volume pricing and production scheduling.
       </div>
 
       <div className="space-y-4">
@@ -81,14 +81,14 @@ export default function FulfillmentSelector({
             <div className="flex-1">
               <div className="font-semibold mb-1">Option A: Digital Files Only</div>
               <div className="text-sm text-muted space-y-1">
-                <p>For architects/developers with existing CNC relationships</p>
+                <p>For architects and developers with existing CNC partnerships</p>
                 <p className="font-mono text-xs">
-                  Full toolpath library: 3-axis, 4-axis, 5-axis G-code
+                  Complete toolpath library: 3-axis, 4-axis, 5-axis G-code
                 </p>
                 <p className="font-mono text-xs">
-                  CAD-editable: STEP format, scale/adapt as needed
+                  CAD-editable: STEP format, scalable and adaptable
                 </p>
-                <p className="text-subtle">Acquire toolpaths immediately after order</p>
+                <p className="text-subtle">Immediate access to toolpaths after purchase</p>
               </div>
               <div className="mt-2 text-lg font-semibold text-primary">
                 {formatPrice(basePrice)}

@@ -50,33 +50,33 @@ export default function AboutPage() {
             <>
               <div className="text-base text-muted">
                 <p>
-                  Stone remained materially cheap for 150 years. Labor became expensive. Industrial materials (concrete, steel) won on labor efficiency—high processing cost, minimal assembly labor. CNC eliminates 90%+ of labor cost. Stone becomes cheaper than alternatives. The economic calculation reverses.
+                  For 150 years, stone remained materially abundant while labor costs rose. Industrial materials (concrete, steel) gained market dominance through labor efficiency—despite higher processing costs, they required minimal assembly labor. CNC automation eliminates over 90% of labor costs in stone fabrication. This fundamentally alters the economic comparison, making stone competitive with modern alternatives.
                 </p>
               </div>
 
               <div className="text-base text-muted">
                 <p>
-                  <strong>15 Clerkenwell Close</strong> (London, Amin Taha): Six-story load-bearing limestone exoskeleton. <strong>Wine Museum</strong> (Corsica, Gilles Perraudin): Structural stone with minimal reinforcement. <strong>Multiple projects</strong> by Carl Fredrik Svenstedt, Webb Yates Engineers. If structural applications are viable, ornamental applications are trivial.
+                  <strong>15 Clerkenwell Close</strong> (London, Amin Taha): Six-story load-bearing limestone exoskeleton. <strong>Wine Museum</strong> (Corsica, Gilles Perraudin): Structural stone with minimal reinforcement. <strong>Multiple projects</strong> by Carl Fredrik Svenstedt and Webb Yates Engineers demonstrate this shift. When structural applications prove viable, ornamental applications become straightforward by comparison.
                 </p>
               </div>
 
               <div className="text-base text-muted">
                 <p>
-                  Chartres Cathedral capitals. Versailles friezes. Renaissance palazzo details. Commissioned by royals, refined over centuries. 3D scanning makes these available at zero marginal cost—dimensionally accurate to 0.1mm, CNC-ready. Not "inspired by"—the actual masterpieces. Best artistry ever produced, now free.
+                  Chartres Cathedral capitals. Versailles friezes. Renaissance palazzo details. Elements commissioned by royalty and refined over centuries. Through 3D scanning, these designs become accessible at minimal marginal cost—dimensionally accurate to 0.1mm, CNC-ready. Not interpretations, but precise reproductions of historical masterworks. Centuries of design excellence, now digitally preserved and reproducible.
                 </p>
               </div>
 
               <div className="text-base text-muted space-y-3">
                 <p>
-                  Building material companies have supply chains, inventory, sales, and pricing built around industrial materials. Exploiting this requires: quarry procurement (not factories), specification sales (not commodity), custom fabrication (not stock), material-only margins (not processing markup).
+                  Traditional building material companies have established supply chains, inventory systems, and pricing structures optimized for industrial materials. Pursuing this opportunity requires different operational choices: direct quarry relationships over factory processing, specification-based sales over commodity pricing, custom fabrication over standardized inventory, and material-focused margins over processing markups.
                 </p>
                 <p>
-                  Stone infrastructure exists (15 Clerkenwell, Perraudin prove it) but cannot scale without abandoning existing business. Not a feature request—requires business model replacement. New entrants start with correct constraints: zero labor (CNC), zero design (scanning), material-only pricing.
+                  The technical infrastructure exists—projects like 15 Clerkenwell and Perraudin's work demonstrate feasibility—but scaling within existing business models presents challenges. This represents not an incremental improvement but a fundamental business model transformation. New entrants can build from first principles: CNC-based fabrication, digitally-sourced designs, and material-centric economics.
                 </p>
                 <div className="mt-6 p-4 bg-primary/5 border-l-4 border-primary">
-                  <p className="font-semibold text-foreground mb-2">Pattern:</p>
+                  <p className="font-semibold text-foreground mb-2">The Pattern:</p>
                   <p className="text-sm">
-                    Automation eliminating major cost categories makes previously uneconomical products optimal. AI eliminating design cost makes historical masterpieces free. Combined, market structure inverts requiring complete business model reconstruction. Incumbents fail because adaptation destroys value chains. New entrants exploit second-order consequences from inception.
+                    When automation eliminates major cost categories, previously uneconomical products can become optimal solutions. When AI reduces design costs, historical masterpieces become accessible. Together, these shifts invert market structures and require fundamental business model reconstruction. Established companies face the challenge of adapting while protecting existing value chains. New entrants can leverage these second-order consequences from the outset.
                   </p>
                 </div>
               </div>
@@ -115,7 +115,7 @@ export default function AboutPage() {
               <div className="mt-6 p-4 bg-background/50 border-l-4 border-primary">
                 <p className="font-semibold text-foreground mb-2">The Insight:</p>
                 <p className="text-sm text-muted">
-                  "Once CNC machines are paid off, this business converts worthless rock into architectural elements at material cost alone. Variable cost per piece approaches zero. This is what happens when labor—historically the dominant cost—is eliminated from production."
+                  "After capital equipment is amortized, production transforms abundant natural stone into architectural elements at material cost. Variable cost per piece becomes minimal. This exemplifies what occurs when labor—historically the dominant expense—is removed from the production equation."
                 </p>
               </div>
             </div>
@@ -188,7 +188,7 @@ export default function AboutPage() {
                   </div>
                 </div>
                 <div className="mt-4 pt-4 border-t border-foreground/10 text-sm text-muted">
-                  <strong>Key insight:</strong> Functionally infinite margin after capital recovery. This is a second-order consequence of automation that existing companies struggle to accommodate but new entrants can exploit from inception.
+                  <strong>Key insight:</strong> Exceptionally high margins after capital recovery. This represents a second-order consequence of automation—one that presents challenges for existing companies to accommodate but opportunities for new entrants to build upon from inception.
                 </div>
               </div>
             </div>
@@ -202,8 +202,8 @@ export default function AboutPage() {
           </h2>
 
           <p className="text-lg text-muted mb-6">
-            Load-bearing structural stone buildings are being built today. If structural applications
-            are viable, ornamental applications are trivial by comparison.
+            Load-bearing structural stone buildings are being constructed today. When structural applications
+            prove viable, ornamental applications become straightforward by comparison.
           </p>
 
           <div className="space-y-4">
@@ -349,7 +349,7 @@ export default function AboutPage() {
                         </div>
                       </div>
                       <p className="text-muted mt-3 italic">
-                        "Once machines are paid off, we're converting $400 of worthless rock into $12,000 architectural elements with $5,000 in machine time. No skilled artisan labor. Unlimited scaling potential."
+                        "After equipment amortization, production transforms $400 of natural stone into $12,000 architectural elements with $5,000 in machine time. Minimal skilled labor requirements. Substantial scaling potential."
                       </p>
                     </div>
                   </div>
@@ -366,7 +366,7 @@ export default function AboutPage() {
           </h2>
 
           <p className="text-lg text-muted mb-6">
-            This isn't about selling decorative pieces to homeowners. This is about supplying building projects at scale.
+            The primary application extends beyond individual decorative pieces to comprehensive building project supply at scale.
           </p>
 
           <div className="space-y-6">
@@ -412,7 +412,7 @@ export default function AboutPage() {
             <div className="card bg-primary/5 border-primary/30">
               <h3 className="font-semibold mb-3">The Vision</h3>
               <p className="text-sm text-muted">
-                Cure glass-cube architecture with economics, not aesthetics. Stone structural members where every piece is a bas-relief masterpiece. Not luxury — baseline. Material is infinite. Labor eliminated. Capital cost amortizes. Result: UNESCO-quality ornament as standard, not exception.
+                Addressing contemporary architectural challenges through economic innovation rather than aesthetic advocacy. Stone structural members where every element incorporates refined ornamental detail. Not positioned as luxury, but as the economically optimal baseline. Materials remain abundant. Labor costs eliminated through automation. Capital investments amortize over time. The outcome: UNESCO-quality ornament as standard practice, not exceptional circumstance.
               </p>
             </div>
 
@@ -420,9 +420,9 @@ export default function AboutPage() {
               <div className="card bg-background/50">
                 <h3 className="font-semibold mb-2 text-sm">Material Abundance</h3>
                 <ul className="list-disc list-inside space-y-1 text-xs text-muted ml-4">
-                  <li>Limestone, sandstone quarries globally abundant</li>
-                  <li>Stone is functionally worthless until carved</li>
-                  <li>No processing required (vs steel smelting, concrete mixing)</li>
+                  <li>Limestone and sandstone quarries globally abundant</li>
+                  <li>Raw stone has minimal inherent value prior to fabrication</li>
+                  <li>Minimal processing required (compared to steel smelting or concrete mixing)</li>
                 </ul>
               </div>
 
@@ -484,9 +484,9 @@ export default function AboutPage() {
             </div>
 
             <div className="card bg-primary/5 border-primary/30">
-              <h3 className="font-semibold mb-3">The Skill Being Demonstrated</h3>
+              <h3 className="font-semibold mb-3">The Capability Being Demonstrated</h3>
               <p className="text-sm text-muted italic">
-                "Recognizing second-order consequences. Not 'CNC makes carving faster' — that's first-order. Second-order: 'Labor elimination makes stone optimal again, enabling architectural styles economically impossible for 150 years.' That's the level of thinking automation requires."
+                "Understanding second-order consequences. Beyond 'CNC accelerates carving'—that's first-order thinking. Second-order analysis reveals: 'Labor elimination makes stone architecturally optimal again, enabling ornamental styles that have been economically unfeasible for 150 years.' This represents the analytical depth automation opportunities require."
               </p>
             </div>
 

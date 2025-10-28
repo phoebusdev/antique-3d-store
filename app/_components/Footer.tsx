@@ -9,7 +9,7 @@ export default function Footer() {
           <div>
             <h3 className="text-sm font-semibold mb-3">About</h3>
             <p className="text-sm text-muted">
-              Post-labor economics for architectural stone. CNC automation eliminates labor costs, making UNESCO-quality ornament economically viable at any scale.
+              Automation economics for architectural stone. CNC technology reduces labor costs, making UNESCO-quality ornament economically viable at any scale.
             </p>
           </div>
           <div>

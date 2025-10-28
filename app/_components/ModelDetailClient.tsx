@@ -84,10 +84,10 @@ export default function ModelDetailClient({ model }: ModelDetailClientProps) {
               disabled={isLoading}
               className="btn btn-primary w-full"
             >
-              {isLoading ? 'Processing...' : 'Order Element'}
+              {isLoading ? 'Processing...' : 'Purchase Element'}
             </button>
             <p className="text-xs text-muted mt-4 text-center">
-              Secure checkout powered by Stripe
+              Secure payment processing by Stripe
             </p>
           </div>
 
@@ -134,11 +134,11 @@ export default function ModelDetailClient({ model }: ModelDetailClientProps) {
               </li>
               <li className="flex items-start gap-3">
                 <span className="text-primary mt-1">✓</span>
-                <span className="text-muted">CNC-ready geometry with proper scaling</span>
+                <span className="text-muted">CNC-ready geometry with accurate scaling</span>
               </li>
               <li className="flex items-start gap-3">
                 <span className="text-primary mt-1">✓</span>
-                <span className="text-muted">Lifetime download access (10 downloads)</span>
+                <span className="text-muted">Permanent download access (10 downloads)</span>
               </li>
               <li className="flex items-start gap-3">
                 <span className="text-primary mt-1">✓</span>
