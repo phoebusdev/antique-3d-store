@@ -24,6 +24,12 @@ export default function Header() {
               >
                 About
               </Link>
+              <Link
+                href="/roadmap"
+                className="text-sm font-display text-muted hover:text-foreground transition-colors"
+              >
+                Roadmap
+              </Link>
             </nav>
           </div>
         </div>

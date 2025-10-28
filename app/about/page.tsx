@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Link from 'next/link'
 import DifferentialScrollSection from '@/app/_components/DifferentialScrollSection'
 
 export const metadata: Metadata = {
@@ -431,10 +432,15 @@ export default function AboutPage() {
         />
 
         {/* Back to catalog */}
-        <div className="border-t border-foreground/10 pt-8 text-center">
-          <a href="/" className="btn btn-primary text-lg px-8 py-3">
-            Browse Elements
-          </a>
+        <div className="border-t border-foreground/10 pt-8 text-center space-y-4">
+          <div className="flex gap-4 justify-center">
+            <Link href="/roadmap" className="btn btn-ghost text-lg px-8 py-3">
+              View Implementation Roadmap
+            </Link>
+            <Link href="/" className="btn btn-primary text-lg px-8 py-3">
+              Browse Elements
+            </Link>
+          </div>
         </div>
       </div>
     </div>
